@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import Styles from "./Page.module.css";
 const AllType = ( {image,title,description,date} ) => {
   return (
@@ -15,10 +15,10 @@ const AllType = ( {image,title,description,date} ) => {
 };
 
 AllType.propTypes= {
-  image:PropTypes.string,
-  title:PropTypes.string,
-  description:PropTypes.string,
-  date:PropTypes.string,
+  image:propTypes.string,
+  title:propTypes.string,
+  description:propTypes.string,
+  date:propTypes.string,
 
 };
 const All = ( {Alldata} ) => {
@@ -31,8 +31,8 @@ const All = ( {Alldata} ) => {
   )
 }
 
-All.PropTypes ={
-  Alldata:PropTypes.array,
+All.propTypes ={
+  Alldata:propTypes.array,
   
 }
 
